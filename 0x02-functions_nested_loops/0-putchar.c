@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * main - entry point
  * Description: printing word as an array of chars
