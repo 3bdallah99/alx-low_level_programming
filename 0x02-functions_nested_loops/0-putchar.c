@@ -1,18 +1,16 @@
-void _putchar(char c);
-
-int main() {
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
-
-    return 0;
+#include "main.c"
+/**
+ * main - entry point
+ * Description: printing word as an array of chars
+ * Return: 0 All time
+ *
+ */
+int main(void)
+{
+char str[] = "_putchar";
+for (int i = 0; i < 8; i++)
+_putchar(str[i]);
+putchar('\n');
+return (0);
 }
 
-void _putchar(char c) {
-}
