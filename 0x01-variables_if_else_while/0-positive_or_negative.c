@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- * main - check the no is pos or neg
+ * main - Entry point of the program.
  *
- * Description - Boda
+ * This program checks if a given number is positive, negative, or zero.
  *
- * Return - ZEEERO
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -13,10 +14,10 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
-printf("is positive");
-elseif(n = 0)
-printf("is zero");
+printf("%d is positive\n", n);
+else if (n == 0)
+printf("%d is zero\n", n);
 else
-printf("is negative");
+printf("%d is negative\n", n);
 return (0);
 }
