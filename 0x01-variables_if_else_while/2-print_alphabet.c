@@ -4,7 +4,7 @@
  *
  * Description - Boda on fire
  *
- * return: ZERO
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
