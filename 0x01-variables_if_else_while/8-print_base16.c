@@ -9,9 +9,14 @@
 int main(void)
 {
 int letter;
-for (letter = 97; letter <= 112; letter++)
+int = i;
+for (letter = 48; letter <= 57; letter++)
 {
 putchar(letter);
+}
+for (i = 97; i <= 102; i++)
+{
+putchar(i);
 }
 putchar('\n');
 return (0);
