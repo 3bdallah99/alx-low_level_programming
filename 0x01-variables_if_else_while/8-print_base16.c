@@ -9,7 +9,7 @@
 int main(void)
 {
 int letter;
-int = i;
+int i;
 for (letter = 48; letter <= 57; letter++)
 {
 putchar(letter);
