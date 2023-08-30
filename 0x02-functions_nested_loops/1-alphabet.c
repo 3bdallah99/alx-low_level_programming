@@ -2,10 +2,10 @@
 
 /**
  * print_alphabet - writes the character c to stdout
+ * description: boda on fire
  * Return: On success 1.
- *         On error, -1 is returned, and errno is set 
+ *
  */
-
 void print_alphabet(void)
 {
 char i;
