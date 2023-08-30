@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-aint fb1 = 1;
+int fb1 = 1;
 int fb2 = 2;
 int fb3 = 0;
 int fb0;
