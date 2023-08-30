@@ -1,23 +1,46 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_times_table - prints the n times table
- * @n: function perametor
- * Return: Always 0 (Success)
-*/
-
-void print_times_table(int n) {
-int i;
-int j;
-if (n < 0 || n > 15) {
-return;  
+ * print_times_table - Print n times table starting with 0
+ * Description: If n is greater than 15 or less than 0 print nothing
+ * @n: type number
+ */
+void print_times_table(int n)
+{
+int nu1 = 0, rw, cl;
+if (n > 15 || n < 0)
+return;
+while (nu1 <= n)
+{
+for (rw = 0; rw <= n; rw++)
+{
+cl = nu1 * rw;
+if (cl > 99)
+{
+_putchar(cl / 100 + '0');
+_putchar((cl / 10 % 10) + '0');
+_putchar(cl % 10 + '0');
 }
-for (i = 0; i <= n; i++) {
-printf("0");
-for (j = 1; j <= n; j++) {
-int r = i * j;
-printf("%4d", r);
+else if (cl > 9)
+{
+_putchar(' ');
+_putchar(cl / 10 + '0');
+_putchar(cl % 10 + '0');
 }
-printf("\n");
+else if (rw != 0)
+{
+_putchar(' ');
+_putchar(' ');
+_putchar(cl + '0');
+}
+else
+_putchar(cl + '0');
+if (rw != n)
+{
+_putchar(',');
+_putchar(' ');
+}
+}
+_putchar('\n');
+nu1++;
 }
 }
