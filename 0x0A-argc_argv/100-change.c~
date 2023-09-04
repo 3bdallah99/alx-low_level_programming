@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+  int i, cents, numCoins;
+  int coins[];
+  // Check if there is exactly one command-line argument
+    if (argc != 2) {
+        printf("Error\n");
+        return 1;  // Return 1 to indicate an error
+}
+cents = atoi(argv[1]);
+    if (cents < 0) {
+        printf("0\n");
+        return (0);
+    }
+coins[] = {25, 10, 5, 2, 1};
+    int numCoins = sizeof(coins) / sizeof(coins[0]);
+
+    // Initialize variables to count the number of coins and the remaining amount
+    int coinCount = 0;
+    int remainingAmount = cents;
+
+    // Calculate the minimum number of coins
+    for (int i = 0; i < numCoins; i++) {
+        while (remainingAmount >= coins[i]) {
+            coinCount++;
+            remainingAmount -= coins[i];
+        }
+    }
+
+    // Print the minimum number of coins
+    printf("%d\n", coinCount);
+
+    return 0;
+}
