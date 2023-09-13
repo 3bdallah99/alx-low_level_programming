@@ -1,9 +1,10 @@
 #include <stdio.h>
+
 /**
- *main - prints the name of the file
- *
- *Return: always 0
-*/
+ * main - Prints the name of the file it was compiled from.
+ * @void: No parameters
+ * Return: 0
+ */
 
 int main(void)
 {
