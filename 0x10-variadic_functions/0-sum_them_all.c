@@ -3,8 +3,8 @@
 /**
  * sum_them_all - ...
  * @n: ....
- * Return: ZERO 
- * 
+ * Return: ZERO
+ *
 */
 int sum_them_all(const unsigned int n, ...)
 {
