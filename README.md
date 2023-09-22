@@ -1,2 +1,1 @@
-# alx-low_level_programming
-## C programming language
+0x12-singly_linked_lists
